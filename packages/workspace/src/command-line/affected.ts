@@ -203,7 +203,8 @@ async function runCommand(
           continueOnError: true,
           stdin: process.stdin,
           stdout: process.stdout,
-          stderr: process.stderr
+          stderr: process.stderr,
+          aggregateOutput: true
         }
       );
       projects.forEach(project => {
